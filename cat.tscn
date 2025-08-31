@@ -20,15 +20,13 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w46py"]
 
-[node name="cat" type="Node2D"]
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="cat" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_52fj1")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_6fl1u")
 animation = &"idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_w46py")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b23fvejb2n8aa"]
+
+[ext_resource type="Script" uid="uid://b7ba8q3n0k8e6" path="res://scripts/collectible.gd" id="1_rd2yi"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_d4byk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rd2yi"]
+size = Vector2(14.25, 13.125)
+
+[node name="Collectible" type="Area2D"]
+script = ExtResource("1_rd2yi")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8.9407e-07, -2.38419e-07)
+scale = Vector2(16, 16)
+texture = SubResource("PlaceholderTexture2D_d4byk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_rd2yi")
